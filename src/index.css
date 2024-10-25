@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face{
+  font-family:'Tiempos';
+  src:url('./assets/fonts/TiemposHeadline-Semibold.ttf')
+}
+@font-face{
+  font-family:'Helvetica';
+  src:url('./assets/fonts/Helvetica.ttf')
+}
+@font-face{
+  font-family:'Kanit';
+  src:url('./assets/fonts/kanitRegular.ttf')
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #545454;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #1e1a1a;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.shadow-test {
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+    rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+    rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.right-login {
+  background: hsla(221, 45%, 73%, 1);
+
+  background: linear-gradient(
+    225deg,
+    hsla(221, 45%, 73%, 1) 0%,
+    hsla(211, 25%, 48%, 1) 33%
+  );
+
+  background: -moz-linear-gradient(
+    225deg,
+    hsla(221, 45%, 73%, 1) 0%,
+    hsla(211, 25%, 48%, 1) 33%
+  );
+
+  background: -webkit-linear-gradient(
+    225deg,
+    hsla(221, 45%, 73%, 1) 0%,
+    hsla(211, 25%, 48%, 1) 33%
+  );
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#9bafd9", endColorstr="#5B7999", GradientType=1 );
+}
+
+.lap-gradient{
+  background: linear-gradient(0deg, #282B32 0%, #26292F 39.69%, #1F2227 63.4%, #141519 82.9%, #040405 100.03%, #000000 103.33%);
+}
